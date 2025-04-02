@@ -14,7 +14,7 @@ function SearchPerson() {
 
     try {
       const response = await axios.get(
-        `http://localhost:3001/buscar?cedula=${cedula}`
+        `https://consultar-cedula-back.onrender.com/buscar?cedula=${cedula}`
       );
       setPersona(response.data);
     } catch (err) {
